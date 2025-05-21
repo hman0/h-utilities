@@ -11,7 +11,6 @@ module.exports = {
 	
 async execute(interaction) {
 	const osInfo = await info.osInfo();
-	const systemInfo = await info.getAllData();
 	const cpuInfo = await info.cpu();
 	const ramInfo = await info.mem();
 	const bytesToGB = bytes => (bytes / (1024 ** 3)).toFixed(2);
