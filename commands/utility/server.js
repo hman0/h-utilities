@@ -14,7 +14,6 @@ async execute(interaction) {
 	const systemInfo = await info.getAllData();
 	const cpuInfo = await info.cpu();
 	const ramInfo = await info.mem();
-	console.log(systemInfo)
 	const bytesToGB = bytes => (bytes / (1024 ** 3)).toFixed(2);
 	if (osInfo.platform === "linux") {
 		interaction.reply(`${os.userInfo().username}@${osInfo.hostname}\n**OS** ${osInfo.distro} ${osInfo.platform} ${osInfo.arch} ${osInfo.kernel}\n**CPU** ${cpuInfo.manufacturer} ${cpuInfo.cores} cores ${cpuInfo.speedMax}ghz\n**RAM** ${bytesToGB(ramInfo.total)}gb`);
