@@ -7,7 +7,7 @@ module.exports = {
         
         const d = new Date(), f = n => n.toString().padStart(2, '0');
         const formatted = `${f(d.getHours())}:${f(d.getMinutes())}`;
-        console.log(`${formatted}: ${interaction.commandName} command executed by ${interaction.user.username}`);
+        console.log(`[${formatted}] ${interaction.commandName} command executed by ${interaction.user.username}`);
 
 
     	const command = interaction.client.commands.get(interaction.commandName);
