@@ -17,7 +17,7 @@ async execute(interaction) {
 		);
 	}).on('error', err => {
 		console.error("Failed to ping gentoo.org:", err);
-		interaction.reply("❌ Failed to ping gentoo.org");
+		interaction.reply("Failed to ping gentoo.org");
 	});
 }
 };
