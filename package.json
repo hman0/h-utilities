@@ -1,6 +1,6 @@
 {
   "name": "h-utilities",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "personal discord bot made by hmansoul for various purposes, such as picking random overwatch heroes",
   "main": "index.js",
   "scripts": {
